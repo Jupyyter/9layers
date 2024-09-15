@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br2qsj0rmx0aq"
-path="res://.godot/imported/dante.png-eb913c553786609a4051a23774934c7b.ctex"
+uid="uid://cxqkdwag6d0vm"
+path="res://.godot/imported/lincon.png-2d5828dd715a66250a1e97359628dde3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imgs/characters/dante.png"
-dest_files=["res://.godot/imported/dante.png-eb913c553786609a4051a23774934c7b.ctex"]
+source_file="res://imgs/characters/lincon.png"
+dest_files=["res://.godot/imported/lincon.png-2d5828dd715a66250a1e97359628dde3.ctex"]
 
 [params]
 
