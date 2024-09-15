@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://ryl6oibd1j6t"]
+
+[ext_resource type="Script" path="res://code/textBox.gd" id="1_f8eno"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_f8eno")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 42.0
+offset_bottom = 23.0

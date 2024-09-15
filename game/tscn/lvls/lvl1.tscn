@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dam1kfcfeintt"]
+[gd_scene load_steps=7 format=3 uid="uid://dam1kfcfeintt"]
 
 [ext_resource type="Texture2D" uid="uid://i5qiisponfev" path="res://imgs/ALLDIRT.png" id="1_wsfxf"]
 [ext_resource type="PackedScene" uid="uid://dadobyyrrsd71" path="res://tscn/others/dante.tscn" id="2_io81r"]
 [ext_resource type="PackedScene" uid="uid://b5jg31a43wvv4" path="res://tscn/others/lincon.tscn" id="3_co8dm"]
+[ext_resource type="PackedScene" uid="uid://ryl6oibd1j6t" path="res://tscn/others/textBox.tscn" id="4_5vfem"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fj8tj"]
 texture = ExtResource("1_wsfxf")
@@ -112,8 +113,8 @@ texture = ExtResource("1_wsfxf")
 5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_o3bap"]
-physics_layer_0/collision_layer = 255
-physics_layer_0/collision_mask = 255
+physics_layer_0/collision_layer = 7
+physics_layer_0/collision_mask = 7
 sources/0 = SubResource("TileSetAtlasSource_fj8tj")
 
 [node name="Node2D" type="Node2D"]
@@ -134,3 +135,10 @@ zoom = Vector2(2, 2)
 
 [node name="lincon" parent="." instance=ExtResource("3_co8dm")]
 position = Vector2(106, 124)
+interaction_text = ":) kkkkkkkkkkkkgsdkaksa"
+
+[node name="Control" parent="." instance=ExtResource("4_5vfem")]
+offset_left = 92.0
+offset_top = 39.0
+offset_right = 132.0
+offset_bottom = 79.0

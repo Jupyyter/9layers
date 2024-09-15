@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5jg31a43wvv4"]
+[gd_scene load_steps=4 format=3 uid="uid://b5jg31a43wvv4"]
 
+[ext_resource type="Script" path="res://code/lincon.gd" id="1_cpp2d"]
 [ext_resource type="Texture2D" uid="uid://cxqkdwag6d0vm" path="res://imgs/characters/lincon.png" id="1_hwug0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smm0u"]
@@ -10,6 +11,7 @@ z_index = -1
 position = Vector2(1, -16)
 collision_layer = 2
 collision_mask = 2
+script = ExtResource("1_cpp2d")
 
 [node name="Lincon" type="Sprite2D" parent="."]
 texture_filter = 1
