@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dam1kfcfeintt"]
+[gd_scene load_steps=6 format=3 uid="uid://dam1kfcfeintt"]
 
-[ext_resource type="Texture2D" uid="uid://i5qiisponfev" path="res://imgs/ALLDIRT.png" id="1_u71ak"]
-[ext_resource type="PackedScene" uid="uid://dadobyyrrsd71" path="res://dante.tscn" id="2_pcbnk"]
+[ext_resource type="Texture2D" uid="uid://i5qiisponfev" path="res://imgs/ALLDIRT.png" id="1_wsfxf"]
+[ext_resource type="PackedScene" uid="uid://dadobyyrrsd71" path="res://tscn/others/dante.tscn" id="2_io81r"]
+[ext_resource type="PackedScene" uid="uid://b5jg31a43wvv4" path="res://tscn/others/lincon.tscn" id="3_co8dm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fj8tj"]
-texture = ExtResource("1_u71ak")
+texture = ExtResource("1_wsfxf")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -111,7 +112,8 @@ texture = ExtResource("1_u71ak")
 5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_o3bap"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 255
+physics_layer_0/collision_mask = 255
 sources/0 = SubResource("TileSetAtlasSource_fj8tj")
 
 [node name="Node2D" type="Node2D"]
@@ -123,5 +125,12 @@ rendering_quadrant_size = 32
 format = 2
 layer_0/tile_data = PackedInt32Array(589824, 0, 0, 655360, 0, 1, 589825, 65536, 0, 655361, 65536, 1, 589826, 0, 0, 655362, 0, 1, 589827, 65536, 0, 655363, 65536, 1, 589828, 0, 0, 655364, 0, 1, 589829, 65536, 0, 655365, 65536, 1, 589830, 0, 0, 655366, 0, 1, 589831, 65536, 0, 655367, 65536, 1, 589832, 0, 0, 655368, 0, 1, 589833, 65536, 0, 655369, 65536, 1, 589834, 0, 0, 655370, 0, 1, 589835, 65536, 0, 655371, 65536, 1, 589836, 0, 0, 655372, 0, 1, 589837, 65536, 0, 655373, 65536, 1, 589838, 0, 0, 655374, 0, 1, 589839, 65536, 0, 655375, 65536, 1, 589840, 0, 0, 655376, 0, 1, 589841, 65536, 0, 655377, 65536, 1, 589842, 0, 0, 655378, 0, 1, 589843, 65536, 0, 655379, 65536, 1, 589844, 0, 0, 655380, 0, 1, 589845, 65536, 0, 655381, 65536, 1)
 
-[node name="dante" parent="." instance=ExtResource("2_pcbnk")]
+[node name="dante" parent="." instance=ExtResource("2_io81r")]
 position = Vector2(18, 123)
+
+[node name="Camera2D" type="Camera2D" parent="dante"]
+position = Vector2(0, 1)
+zoom = Vector2(2, 2)
+
+[node name="lincon" parent="." instance=ExtResource("3_co8dm")]
+position = Vector2(106, 124)

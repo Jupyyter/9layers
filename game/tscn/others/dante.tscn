@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dadobyyrrsd71"]
 
 [ext_resource type="Texture2D" uid="uid://br2qsj0rmx0aq" path="res://imgs/characters/dante.png" id="1_4rpx6"]
-[ext_resource type="Script" path="res://dante.gd" id="1_wc252"]
+[ext_resource type="Script" path="res://code/dante.gd" id="1_wc252"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8bmny"]
 size = Vector2(15, 25)
