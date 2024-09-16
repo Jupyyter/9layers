@@ -137,6 +137,10 @@ collision_mask = 1
 [node name="Camera2D" type="Camera2D" parent="dante"]
 position = Vector2(0, 1)
 zoom = Vector2(2, 2)
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+drag_right_margin = 0.1
+drag_bottom_margin = 0.1
 
 [node name="RedSky" type="Sprite2D" parent="dante"]
 z_index = -1
