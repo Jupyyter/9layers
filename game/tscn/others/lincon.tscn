@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5jg31a43wvv4"]
+[gd_scene load_steps=5 format=3 uid="uid://b5jg31a43wvv4"]
 
 [ext_resource type="Script" path="res://code/lincon.gd" id="1_cpp2d"]
 [ext_resource type="Texture2D" uid="uid://cxqkdwag6d0vm" path="res://imgs/characters/lincon.png" id="1_hwug0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smm0u"]
 size = Vector2(11, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1xx4"]
+size = Vector2(21, 26)
 
 [node name="lincon" type="RigidBody2D"]
 z_index = -1
@@ -20,3 +23,9 @@ texture = ExtResource("1_hwug0")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 2.5)
 shape = SubResource("RectangleShape2D_smm0u")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_g1xx4")
