@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dam1kfcfeintt"]
+[gd_scene load_steps=9 format=3 uid="uid://dam1kfcfeintt"]
 
 [ext_resource type="Script" path="res://tscn/lvls/lvl_1.gd" id="1_f405b"]
 [ext_resource type="Texture2D" uid="uid://i5qiisponfev" path="res://imgs/ALLDIRT.png" id="1_wsfxf"]
 [ext_resource type="PackedScene" uid="uid://dadobyyrrsd71" path="res://tscn/others/dante.tscn" id="2_io81r"]
 [ext_resource type="PackedScene" uid="uid://b5jg31a43wvv4" path="res://tscn/others/lincon.tscn" id="3_co8dm"]
+[ext_resource type="Texture2D" uid="uid://dl1bcvq0eerm1" path="res://imgs/Levels/Background/redSky.png" id="4_1n2au"]
 [ext_resource type="PackedScene" uid="uid://bmac03gjspvhr" path="res://tscn/others/textBox.tscn" id="4_5vfem"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fj8tj"]
@@ -136,6 +137,11 @@ collision_mask = 1
 [node name="Camera2D" type="Camera2D" parent="dante"]
 position = Vector2(0, 1)
 zoom = Vector2(2, 2)
+
+[node name="RedSky" type="Sprite2D" parent="dante"]
+z_index = -1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_1n2au")
 
 [node name="lincon" parent="." instance=ExtResource("3_co8dm")]
 position = Vector2(391, 126)
